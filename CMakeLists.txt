@@ -109,6 +109,8 @@ endif(Windows)
 # C++ Binding definition
 # ----------------------
 if(ENABLE_CXX)
+    set(CMAKE_CXX_STANDARD 11)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
     include(bindings/cpp/CMakeLists.txt)
 endif(ENABLE_CXX)
 
